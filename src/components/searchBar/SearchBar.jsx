@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import logo from '../asset/images/logo.png';
-import search from '../asset/images/search.png';
+import logo from '../../asset/images/logo.png';
+import search from '../../asset/images/search.png';
 
 const SearchBar = () => {
   const inputRef = useRef();

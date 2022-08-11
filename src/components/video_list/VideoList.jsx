@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { VideoCard } from './VideoCard';
+import VideoCard from '../video_item/VideoItem';
+import styles from './videoList.module.css'
 
 const VideoList = () => {
   const REACT_APP_API_KEY = 'AIzaSyC_ze-a9UX_YPmczk-isbhbnCDetuLr910';
@@ -16,12 +17,12 @@ const VideoList = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  console.log('list',listOfVideos);
+  console.log('list', listOfVideos);
 
   const VideoCards = listOfVideos.map((item) => {
-    return <VideoCard key={item.id} video={item} />
-  })
+    return <VideoCard key={item.id} video={item} />;
+  });
 
-  return <div>{VideoCards}</div>;
+  return <div className={styles.main_container}>{VideoCards}</div>;
 };
 export default VideoList;

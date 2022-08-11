@@ -1,0 +1,22 @@
+
+.img {
+ margin: 10px 10px;
+}
+
+.card_container {
+    width: 400px;
+    border: solid 2px black;
+    display: flex;
+    
+}
+
+.text_container {
+    margin: 10px;
+    margin-left: 1rem;
+
+}
+
+.title {
+    font-weight: 600;
+}
+
